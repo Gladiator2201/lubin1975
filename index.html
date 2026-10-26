@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LUBIN ’75 – Przepustka z widokiem na budowę</title>
+<meta name="description" content="Rodzinny pokaz slajdów: kwiecień 1975, Lubin, ul. Legnicka 15. Wojak Andrzej, cywil Stach i Ania na placu budowy przyszłej Szkoły Podstawowej nr 9.">
+<meta name="theme-color" content="#2a1a10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f3e3c3'/%3E%3Crect x='10' y='10' width='44' height='44' rx='8' fill='%23d9622b'/%3E%3Ctext x='32' y='42' font-size='24' text-anchor='middle' font-family='Georgia' font-weight='bold' fill='%23f3e3c3'%3E75%3C/text%3E%3C/svg%3E">
+<style>
+@font-face{font-family:"Shrikhand";src:url(fonts/Shrikhand-Regular.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Abril";src:url(fonts/AbrilFatface-Regular.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Oswald";font-weight:200 700;src:url(fonts/Oswald.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Elite";src:url(fonts/SpecialElite-Regular.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Courier Prime";src:url(fonts/CourierPrime-Regular.ttf) format("truetype");font-display:swap}
+:root{--choc:#2a1a10;--brown:#5a3620;--rust:#b5401f;--org:#d9622b;--mus:#e8a33d;--gold:#f1c75b;--cream:#f3e3c3;--paper:#fbf3e1;--olive:#7d8a3a;--teal:#2f7f7a;--ink:#24160c}
+*{box-sizing:border-box}
+html{background:var(--choc)}
+body{margin:0;color:var(--cream);font-family:"Oswald","Arial Narrow",sans-serif;font-weight:400;font-size:18px;min-height:100vh;
+ background:radial-gradient(ellipse 80% 50% at 50% 0,rgba(232,163,61,.18),transparent 70%),
+ repeating-linear-gradient(90deg,rgba(0,0,0,.10) 0 2px,transparent 2px 90px),
+ linear-gradient(180deg,#30200f,#24170d 60%,#1d130b)}
+.wrap{max-width:1400px;margin:0 auto;padding:0 32px 60px}
+a{color:var(--gold)}
+
+/* ===== COVER (70s movie poster) ===== */
+.cover{position:relative;overflow:hidden;margin:0 -32px;padding:46px 20px 56px;text-align:center;color:var(--ink);
+ background:radial-gradient(ellipse at 50% 35%,#fff8e6,var(--cream) 60%,#e6d0a6)}
+.cover::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:multiply;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .42 0 0 0 0 .3 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.rainbow{position:absolute;left:50%;top:50%;width:min(1500px,190vw);aspect-ratio:2/1;transform:translate(-50%,-12%);border-radius:50% 50% 0 0/100% 100% 0 0;
+ background:radial-gradient(circle at 50% 100%,transparent 0 39%,var(--brown) 39% 46%,var(--rust) 46% 53%,var(--org) 53% 60%,var(--mus) 60% 67%,var(--gold) 67% 74%,transparent 74%);opacity:.95}
+.cover .inner{position:relative;z-index:2}
+.kicker{display:inline-flex;gap:14px;align-items:center;font-family:"Oswald";font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:15px;color:var(--brown)}
+.kicker i{display:inline-block;width:46px;height:8px;background:linear-gradient(180deg,var(--org) 0 33%,var(--mus) 33% 66%,var(--brown) 66%)}
+h1{font-family:"Shrikhand",Georgia,serif;font-weight:400;font-size:clamp(76px,15vw,200px);line-height:.95;margin:10px 0 0;color:var(--cream);letter-spacing:.01em;
+ text-shadow:3px 3px 0 var(--org),6px 6px 0 var(--mus),9px 9px 0 var(--rust),12px 12px 0 var(--brown);-webkit-text-stroke:2px var(--brown);paint-order:stroke fill}
+.sub{font-family:"Abril",Georgia,serif;font-size:clamp(24px,3.6vw,44px);margin:18px 0 0;color:var(--brown);line-height:1.1}
+.date{display:inline-block;margin-top:14px;font-family:"Courier Prime",monospace;font-size:17px;color:var(--ink);background:var(--paper);border:2px solid var(--brown);padding:6px 14px;box-shadow:4px 4px 0 var(--org)}
+.story{max-width:760px;margin:26px auto 0;background:var(--paper);color:var(--ink);font-family:"Elite","Courier Prime",monospace;font-size:18px;line-height:1.55;text-align:left;
+ padding:20px 26px;border:2px solid var(--brown);box-shadow:8px 8px 0 var(--rust);transform:rotate(-.6deg)}
+.story p{margin:0 0 .6em}.story p:last-child{margin:0}
+.credits{margin:28px auto 0;max-width:900px;display:flex;justify-content:center;flex-wrap:wrap;gap:12px 34px;font-family:"Oswald";text-transform:uppercase;color:var(--brown)}
+.credits div{text-align:center;background:rgba(251,243,225,.92);border:2px solid var(--brown);border-radius:10px;padding:8px 16px;box-shadow:4px 4px 0 rgba(42,26,16,.35)}.credits small{display:block;font-size:12px;letter-spacing:.28em;font-weight:500}
+.credits b{display:block;font-family:"Abril";font-weight:400;font-size:30px;letter-spacing:.04em;color:var(--rust);line-height:1.05}
+.credits em{display:block;font-style:normal;font-size:13px;letter-spacing:.12em}
+.play-all{margin-top:30px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.cta{font-family:"Oswald";font-weight:700;font-size:19px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream);background:var(--rust);border:3px solid var(--ink);border-radius:40px;padding:12px 28px;cursor:pointer;box-shadow:5px 5px 0 var(--ink);transition:transform .2s,box-shadow .2s}
+.cta:hover,.cta:focus-visible{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink);outline:none}
+.cta.alt{background:var(--mus);color:var(--ink)}
+
+/* ===== SECTIONS ===== */
+section{margin-top:76px}
+.sec-h{text-align:center;margin:0 0 34px}
+.sec-h .num{display:inline-block;font-family:"Oswald";font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:14px;color:var(--ink);background:var(--mus);padding:5px 14px 5px 18px;border-radius:30px}
+.sec-h h2{margin:12px 0 0;font-family:"Shrikhand",Georgia,serif;font-weight:400;font-size:clamp(30px,4.4vw,54px);line-height:1.05;color:var(--gold);text-shadow:3px 3px 0 var(--rust),6px 6px 0 #140c06}
+.sec-h small{display:block;margin-top:10px;font-family:"Courier Prime",monospace;font-size:17px;color:var(--cream);opacity:.85}
+.sec-h .stripes{display:block;width:min(420px,70%);height:12px;margin:16px auto 0;background:linear-gradient(180deg,var(--org) 0 33%,var(--mus) 33% 66%,var(--olive) 66%);border-radius:6px}
+
+/* ===== GRID ===== */
+.grid{display:flex;flex-wrap:wrap;gap:40px 34px;justify-content:center}
+.th{position:relative;display:block;flex:0 1 auto;width:calc(var(--a) * 300px + 36px);max-width:100%;color:inherit;text-decoration:none;cursor:pointer;transition:transform .35s cubic-bezier(.2,.8,.3,1.4)}
+.th:nth-child(odd){--tilt:-1.4deg}.th:nth-child(even){--tilt:1.2deg}
+.th:hover,.th:focus-visible{transform:translateY(-6px) rotate(var(--tilt));outline:none}
+.th:focus-visible .pf{outline:3px dashed var(--gold);outline-offset:6px}
+.th .box img{transition:transform .6s ease}
+.th:hover .box img,.th:focus-visible .box img{transform:scale(1.05)}
+.fav-dot{position:absolute;top:-11px;right:-11px;z-index:6;width:30px;height:30px;border-radius:50%;background:var(--rust);color:#fff;display:none;place-items:center;font-size:16px;border:2px solid var(--ink);font-family:Arial,sans-serif}
+.th.is-fav .fav-dot{display:grid}
+
+/* frames: the photo itself is never covered or filtered when at rest */
+.pf{position:relative}
+.box{position:relative;overflow:hidden;aspect-ratio:var(--a);background:#120c08}
+.box img{display:block;width:100%;height:100%;object-fit:cover}
+.band{display:flex;align-items:center;gap:10px;min-height:46px}
+.band .no{flex:none;line-height:1}
+.band .tt{flex:1;min-width:0;line-height:1.15}
+/* 1. Slajd (kartonowa ramka slajdu) */
+.v-slajd{background:linear-gradient(160deg,#f6eedb,#e9dcbf);padding:20px 20px 0;border-radius:12px;box-shadow:0 1px 0 #fff inset,6px 8px 0 rgba(0,0,0,.35)}
+.v-slajd .box{border-radius:10px;box-shadow:0 0 0 2px #cbb88f}
+.v-slajd .band{color:var(--ink);padding:8px 2px 12px}
+.v-slajd .band .no{font-family:"Courier Prime";font-size:13px;color:#fff;background:var(--rust);padding:4px 6px;border-radius:3px}
+.v-slajd .band .tt{font-family:"Courier Prime";font-size:15px}
+/* 2. Polaroid */
+.v-polaroid{background:#fdfcf7;padding:12px 12px 0;box-shadow:6px 8px 0 rgba(0,0,0,.35)}
+.v-polaroid .band{color:#2a2a2a;padding:12px 4px 16px}
+.v-polaroid .band .no{font-family:"Abril";font-size:22px;color:var(--org)}
+.v-polaroid .band .tt{font-family:"Elite";font-size:16px}
+/* 3. Magazyn */
+.v-magazyn{background:var(--mus);padding:14px 14px 0;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--rust)}
+.v-magazyn .band{margin:12px -14px 0;padding:8px 14px 10px;background:var(--ink);color:var(--cream)}
+.v-magazyn .band .no{font-family:"Shrikhand";font-size:24px;color:var(--gold)}
+.v-magazyn .band .tt{font-family:"Oswald";font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:15px}
+/* 4. Kino (taśma filmowa) */
+.v-kino{background:#17110c;padding:12px 26px 0;box-shadow:6px 8px 0 rgba(0,0,0,.4)}
+.v-kino::before,.v-kino::after{content:"";position:absolute;top:0;bottom:0;width:26px;background:repeating-linear-gradient(180deg,transparent 0 7px,#e9dcbf 7px 17px,transparent 17px 24px) center/12px 100% no-repeat}
+.v-kino::before{left:0}.v-kino::after{right:0}
+.v-kino .band{color:var(--cream);padding:8px 0 12px}
+.v-kino .band .no{font-family:"Oswald";font-weight:700;font-size:18px;color:var(--mus)}
+.v-kino .band .tt{font-family:"Oswald";font-weight:400;font-size:16px;letter-spacing:.02em}
+
+/* epilog */
+.epi{display:flex;gap:40px;align-items:center;justify-content:center;flex-wrap:wrap}
+.epi .th{flex:none}
+.epi-txt{flex:1 1 380px;max-width:560px;background:var(--paper);color:var(--ink);padding:24px 28px;border:2px solid var(--brown);box-shadow:8px 8px 0 var(--teal);font-family:"Courier Prime",monospace;font-size:17px;line-height:1.55}
+.epi-txt h3{margin:0 0 10px;font-family:"Abril";font-weight:400;font-size:28px;color:var(--rust);line-height:1.1}
+.epi-txt p{margin:0 0 .7em}
+.epi-txt .src{font-size:14px;margin:0;border-top:1px dashed var(--brown);padding-top:10px}
+.epi-txt .src a{color:var(--teal)}
+
+/* footer */
+footer{margin-top:90px;text-align:center;color:var(--cream);font-size:16px;letter-spacing:.03em}
+footer .end{font-family:"Shrikhand";font-size:clamp(46px,8vw,92px);color:var(--gold);text-shadow:4px 4px 0 var(--rust),8px 8px 0 #140c06;margin:0 0 8px;font-weight:400}
+footer .favs{font-family:"Oswald";font-weight:600;color:var(--mus);margin:10px 0;font-size:19px}
+.qr{display:inline-flex;gap:18px;align-items:center;text-align:left;margin:22px 0 6px;background:var(--paper);color:var(--ink);padding:12px 18px 12px 12px;border:2px solid var(--brown);box-shadow:6px 6px 0 var(--org)}
+.qr img{width:120px;height:120px;display:block}
+.qr{max-width:100%}.qr span{font-family:"Courier Prime";font-size:15px;max-width:230px;line-height:1.4;overflow-wrap:anywhere;min-width:0}
+footer small{display:block;margin-top:18px;color:#cdb895;font-size:14px;line-height:1.6}
+
+/* ===== LIGHTBOX (ciemny pokój z rzutnikiem) ===== */
+#lb{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none;
+ background:radial-gradient(ellipse 70% 60% at 50% 45%,#3a2716,#140d08 70%)}
+#lb.open{opacity:1;visibility:visible}
+.lb-top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;gap:10px;z-index:8}
+.lb-ctr{font-family:"Oswald";font-weight:700;font-size:24px;letter-spacing:.08em;color:var(--mus);min-width:90px}
+.lb-btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.btn{font-family:"Oswald";font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:var(--cream);border:2px solid var(--ink);border-radius:30px;padding:7px 14px;cursor:pointer;box-shadow:3px 3px 0 var(--org);transition:transform .15s,box-shadow .15s}
+.btn:hover,.btn:focus-visible{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--org);outline:none}
+.btn.on{background:var(--rust);color:#fff}
+.btn .sm{display:none}
+.btn.close{background:var(--mus);font-family:Arial,sans-serif;font-weight:700;font-size:19px;line-height:1;padding:6px 12px}
+#stage{margin-top:34px;width:min-content;max-width:calc(100vw - 24px);background:linear-gradient(160deg,#f6eedb,#e3d4b2);padding:14px 14px 0;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#stage .box{aspect-ratio:auto;border-radius:6px;perspective:1400px}
+#lbimg{display:block;max-width:calc(100vw - 240px);max-height:calc(100vh - 300px);max-height:calc(100dvh - 300px);width:auto;height:auto;object-fit:contain;opacity:0;transition:opacity .25s}
+#lbimg.show{opacity:1}
+#stage .band{width:0;min-width:100%;color:var(--ink);padding:10px 4px 12px}
+#stage .band .no{font-family:"Courier Prime";font-size:14px;color:#fff;background:var(--rust);padding:4px 7px;border-radius:3px}
+#stage .band .tt{font-family:"Elite";font-size:20px}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:60px;height:60px;display:grid;place-items:center;cursor:pointer;background:var(--mus);border:3px solid var(--ink);border-radius:50%;z-index:8;padding:0;box-shadow:4px 4px 0 var(--rust);transition:transform .15s,box-shadow .15s}
+.arrow svg{width:28px;height:28px}
+.arrow:hover,.arrow:focus-visible{transform:translateY(calc(-50% - 2px)) translateX(-2px);box-shadow:7px 7px 0 var(--rust);outline:none}
+.arrow.prev{left:18px}.arrow.next{right:18px}
+.lb-sec{margin-top:16px;font-family:"Oswald";font-weight:500;font-size:15px;letter-spacing:.22em;color:var(--mus);text-transform:uppercase;text-align:center;padding:0 10px}
+.toast{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);background:var(--cream);color:var(--ink);border:2px solid var(--ink);border-radius:30px;box-shadow:4px 4px 0 var(--org);padding:10px 20px;font-family:"Oswald";font-weight:600;font-size:15px;letter-spacing:.04em;opacity:0;transition:opacity .4s;pointer-events:none;z-index:9;text-align:center;max-width:90vw}
+.toast.on{opacity:1}
+#lb:fullscreen{background:#140d08}
+
+/* ===== TRANSITIONS (lightbox: #stage.fx-*, siatka: .th.in.fx-*) ===== */
+#fx{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+.box::before,.box::after{pointer-events:none}
+:is(#stage,.th.in).fx-projector img{animation:prjImg .8s cubic-bezier(.2,.9,.25,1.25) backwards var(--d,0s)}
+#stage.fx-projector #fx,.th.in.fx-projector .box::after{content:"";position:absolute;inset:0;z-index:3;background:#fffbe6;animation:flash .5s ease-out both var(--d,0s)}
+#stage.fx-projector #fx::after{content:"klik!";position:absolute;right:10px;top:8px;font-family:"Courier Prime";font-size:20px;color:var(--rust);animation:fadeOut .9s ease-in both}
+@keyframes prjImg{0%{transform:translateY(-22%) rotate(-3deg);opacity:0}35%{opacity:1}65%{transform:translateY(2%) rotate(.6deg)}100%{transform:none}}
+@keyframes flash{0%{opacity:1}100%{opacity:0}}
+@keyframes fadeOut{0%,40%{opacity:1}100%{opacity:0}}
+
+#stage.fx-countdown #fx{background:radial-gradient(circle,transparent 0 30%,#f0e6cf 30% 31%,transparent 31% 44%,#f0e6cf 44% 45%,transparent 45%),linear-gradient(#f0e6cf,#f0e6cf) center/2px 100% no-repeat,linear-gradient(#f0e6cf,#f0e6cf) center/100% 2px no-repeat,#4a3a2c;animation:cdOut 1.05s steps(1,end) both}
+#stage.fx-countdown #fx::before{content:"";position:absolute;left:50%;top:50%;width:200%;aspect-ratio:1;translate:-50% -50%;background:conic-gradient(rgba(0,0,0,.45) 0 var(--sw,0deg),transparent 0);animation:sweep .3s linear 3}
+#stage.fx-countdown #fx span{position:absolute;inset:0;display:grid;place-items:center;font-family:"Oswald";font-weight:700;font-size:min(30vw,170px);color:#f6eedb;opacity:0;animation:cdNum .3s steps(1,end) both}
+#stage.fx-countdown #fx span:nth-child(2){animation-delay:.3s}#stage.fx-countdown #fx span:nth-child(3){animation-delay:.6s}
+@property --sw{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes sweep{from{--sw:0deg}to{--sw:360deg}}
+@keyframes cdNum{0%{opacity:1}100%{opacity:0}}
+@keyframes cdOut{0%{opacity:1}100%{opacity:0;visibility:hidden}}
+.th.in.fx-countdown .box::after{content:"3";position:absolute;inset:0;z-index:3;display:grid;place-items:center;font-family:"Oswald";font-weight:700;font-size:90px;color:#f6eedb;background:radial-gradient(circle,transparent 0 34%,#f0e6cf 34% 35.5%,transparent 35.5%),#4a3a2c;animation:cdGrid .9s both var(--d,0s)}
+@keyframes cdGrid{0%{content:"3";opacity:1}30%{content:"2"}60%{content:"1";opacity:1}100%{content:"1";opacity:0}}
+
+:is(#stage,.th.in).fx-iris img{animation:iris .75s cubic-bezier(.6,0,.2,1) backwards var(--d,0s)}
+#stage.fx-iris #fx,.th.in.fx-iris .box::after{content:"";position:absolute;inset:0;z-index:3;background:repeating-conic-gradient(from 10deg,#0d0905 0 30deg,#2a1d12 30deg 60deg);-webkit-mask:radial-gradient(circle,transparent 0 var(--ir,0%),#000 calc(var(--ir,0%) + 1%));mask:radial-gradient(circle,transparent 0 var(--ir,0%),#000 calc(var(--ir,0%) + 1%));animation:irisMask .75s cubic-bezier(.6,0,.2,1) both var(--d,0s)}
+@property --ir{syntax:"<percentage>";inherits:false;initial-value:0%}
+@keyframes iris{0%{clip-path:circle(0% at 50% 50%)}100%{clip-path:circle(75% at 50% 50%)}}
+@keyframes irisMask{0%{--ir:0%;opacity:1}90%{--ir:72%;opacity:1}100%{--ir:80%;opacity:0}}
+
+#stage.fx-polaroid #fx,.th.in.fx-polaroid .box::after{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(160deg,#5d6157,#3e423b);animation:develop 1.1s ease-in both var(--d,0s)}
+:is(#stage,.th.in).fx-polaroid img{animation:shake .45s ease-out backwards var(--d,0s)}
+@keyframes develop{0%{opacity:1}20%{opacity:.96}100%{opacity:0}}
+@keyframes shake{0%{transform:translateX(-4%) rotate(-2deg)}25%{transform:translateX(3%) rotate(1.5deg)}50%{transform:translateX(-2%) rotate(-1deg)}75%{transform:translateX(1%)}100%{transform:none}}
+
+#stage.fx-tv #fx,.th.in.fx-tv .box::after{content:"";position:absolute;inset:0;z-index:3;background-image:var(--noise);background-size:160px 160px;animation:static .9s steps(1,end) both var(--d,0s),tvOut .9s ease-in both var(--d,0s)}
+:is(#stage,.th.in).fx-tv img{animation:crt .9s cubic-bezier(.3,.8,.3,1) backwards var(--d,0s)}
+@keyframes static{0%{background-position:0 0}12%{background-position:-40px 70px}24%{background-position:60px -30px}36%{background-position:-90px -50px}48%{background-position:30px 110px}60%{background-position:-70px 20px}72%{background-position:100px -80px}84%{background-position:-20px 40px}}
+@keyframes tvOut{0%,40%{opacity:1}75%{opacity:.35}100%{opacity:0}}
+@keyframes crt{0%,38%{transform:scale(1.15,.006);opacity:0}39%{opacity:1}62%{transform:scale(1.02,1.05)}100%{transform:none}}
+
+:is(#stage,.th.in).fx-flip img{transform-origin:0 50%;animation:flip .8s cubic-bezier(.25,.9,.3,1.1) backwards var(--d,0s)}
+.th.in.fx-flip .pf{perspective:1200px}
+#stage.fx-flip #fx,.th.in.fx-flip .box::after{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(90deg,rgba(0,0,0,.55),transparent 60%);animation:flash .8s ease-out both var(--d,0s)}
+@keyframes flip{0%{transform:perspective(1200px) rotateY(-95deg);opacity:.2}60%{transform:perspective(1200px) rotateY(8deg);opacity:1}100%{transform:perspective(1200px) rotateY(0)}}
+
+#stage.fx-curtain #fx::before,#stage.fx-curtain #fx::after,.th.in.fx-curtain .box::before,.th.in.fx-curtain .box::after{content:"";position:absolute;top:0;bottom:0;width:51%;z-index:3;
+ background:linear-gradient(180deg,rgba(255,220,150,.25),transparent 12%),repeating-linear-gradient(90deg,#6d0f12 0,#9d1c1f 9%,#5a0b0e 18%);box-shadow:0 0 20px rgba(0,0,0,.6)}
+#stage.fx-curtain #fx::before,.th.in.fx-curtain .box::before{left:0;animation:curL .95s cubic-bezier(.6,0,.3,1) both var(--d,0s)}
+#stage.fx-curtain #fx::after,.th.in.fx-curtain .box::after{right:0;animation:curR .95s cubic-bezier(.6,0,.3,1) both var(--d,0s)}
+@keyframes curL{0%,20%{transform:none}100%{transform:translateX(-102%) scaleX(.6)}}
+@keyframes curR{0%,20%{transform:none}100%{transform:translateX(102%) scaleX(.6)}}
+
+:is(#stage,.th.in).fx-zoom img{animation:zoomIn .7s cubic-bezier(.2,.8,.2,1) backwards var(--d,0s)}
+#stage.fx-zoom #fx,.th.in.fx-zoom .box::after{content:"";position:absolute;inset:-50%;z-index:3;background:repeating-conic-gradient(rgba(255,240,200,.85) 0 4deg,transparent 4deg 14deg);-webkit-mask:radial-gradient(circle,transparent 0 12%,#000 40%);mask:radial-gradient(circle,transparent 0 12%,#000 40%);animation:burst .7s ease-out both var(--d,0s)}
+@keyframes zoomIn{0%{transform:scale(2.6) rotate(6deg);opacity:0}45%{opacity:1}100%{transform:none}}
+@keyframes burst{0%{transform:scale(.4) rotate(0);opacity:1}100%{transform:scale(1.6) rotate(25deg);opacity:0}}
+
+#stage.fx-tiles img{animation:hideTill 1s steps(1,end) backwards}
+#stage.fx-tiles #fx{display:grid;grid-template-columns:repeat(var(--tc),1fr);grid-template-rows:repeat(var(--tr),1fr);perspective:900px;animation:cdOut 1.05s steps(1,end) both}
+#stage.fx-tiles #fx i{background-repeat:no-repeat;animation:tile .42s cubic-bezier(.3,1.4,.5,1) both;backface-visibility:hidden}
+@keyframes hideTill{0%{opacity:0}100%{opacity:1}}
+@keyframes tile{0%{transform:rotateX(-90deg) scale(.6);opacity:0}100%{transform:none;opacity:1}}
+.th.in.fx-tiles .box::after{content:"";position:absolute;inset:0;z-index:3;background:conic-gradient(var(--choc) 0 25%,transparent 0 50%,var(--choc) 0 75%,transparent 0) 0 0/50% 33.34%;animation:tilesGrid .8s steps(4,end) both var(--d,0s)}
+@keyframes tilesGrid{0%{opacity:1;background-size:50% 33.34%}50%{opacity:1;background-size:25% 25%}100%{opacity:0;background-size:12.5% 12.5%}}
+
+#stage.fx-blinds #fx,.th.in.fx-blinds .box::after{content:"";position:absolute;inset:0;z-index:3;background:repeating-linear-gradient(180deg,#d9c79f 0 var(--bl,100%),transparent var(--bl,100%) 12.5%);background-size:100% 12.5%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1);animation:blinds .85s cubic-bezier(.5,0,.3,1) both var(--d,0s)}
+#stage.fx-blinds #fx{background:repeating-linear-gradient(180deg,#e2d1a8 0 calc(var(--bl,100%) * .125),rgba(0,0,0,.25) calc(var(--bl,100%) * .125) calc(var(--bl,100%) * .125 + 2px),transparent calc(var(--bl,100%) * .125 + 2px) 12.5%)}
+.th.in.fx-blinds .box::after{background:repeating-linear-gradient(180deg,#e2d1a8 0 calc(var(--bl,100%) * .125),transparent calc(var(--bl,100%) * .125) 12.5%)}
+@property --bl{syntax:"<percentage>";inherits:false;initial-value:100%}
+@keyframes blinds{0%,15%{--bl:100%;opacity:1}90%{--bl:0%;opacity:1}100%{--bl:0%;opacity:0}}
+
+:is(#stage,.th.in).fx-stamp img{animation:fadeIn .2s ease-out backwards var(--d,0s)}
+:is(#stage,.th.in).fx-stamp .box{animation:thud .4s ease-out .22s backwards}
+#stage.fx-stamp #fx::after,.th.in.fx-stamp .box::after{content:"ZATWIERDZONO";position:absolute;left:50%;top:50%;z-index:4;white-space:nowrap;font-family:"Oswald";font-weight:700;letter-spacing:.08em;font-size:clamp(20px,5vw,54px);color:#c0291b;border:5px double #c0291b;border-radius:8px;padding:4px 16px;background:rgba(251,243,225,.12);
+ animation:stamp 1.15s cubic-bezier(.2,.9,.3,1) both var(--d,0s)}
+.th.in.fx-stamp .box::after{font-size:22px;border-width:4px;padding:2px 10px}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes thud{0%{transform:none}30%{transform:translate(3px,2px) scale(.985)}60%{transform:translate(-2px,-1px)}100%{transform:none}}
+@keyframes stamp{0%{transform:translate(-50%,-50%) rotate(-24deg) scale(3.2);opacity:0}22%{transform:translate(-50%,-50%) rotate(-12deg) scale(1);opacity:.95}70%{transform:translate(-50%,-50%) rotate(-12deg) scale(1);opacity:.9}100%{transform:translate(-50%,-50%) rotate(-12deg) scale(1.04);opacity:0}}
+
+/* zanim zdjęcie w siatce się pojawi */
+.th.rv:not(.in) .pf{opacity:0;transform:translateY(24px)}
+.th.rv .pf{transition:opacity .3s ease var(--d,0s),transform .45s cubic-bezier(.2,.9,.3,1.2) var(--d,0s)}
+
+@media (max-width:700px){
+ body{font-size:16px}
+ .wrap{padding:0 14px 40px}
+ .cover{margin:0 -14px;padding:30px 14px 40px}
+ .kicker{font-size:11px;letter-spacing:.2em;gap:8px}.kicker i{width:26px}
+ h1{text-shadow:2px 2px 0 var(--org),4px 4px 0 var(--mus),6px 6px 0 var(--rust),8px 8px 0 var(--brown);-webkit-text-stroke:1.5px var(--brown)}
+ .date{font-size:14px}
+ .story{font-size:16px;padding:16px 16px;box-shadow:5px 5px 0 var(--rust)}
+ .credits{gap:10px}.credits div{padding:6px 10px}.credits b{font-size:22px}.credits em{font-size:11px}
+ .cta{font-size:15px;padding:10px 18px}
+ section{margin-top:56px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 16px}
+ .th{width:auto}.th.wide{grid-column:span 2}
+ .th:not(.wide) .box{aspect-ratio:.72}
+ .th.solo{grid-column:span 2;justify-self:center;width:calc(50% - 8px)}
+ .band{min-height:34px;gap:6px}
+ .v-slajd{padding:9px 9px 0;border-radius:8px}.v-polaroid{padding:7px 7px 0}.v-magazyn{padding:7px 7px 0;box-shadow:5px 5px 0 var(--rust)}.v-magazyn .band{margin:7px -7px 0;padding:6px 7px}
+ .v-kino{padding:7px 16px 0}.v-kino::before,.v-kino::after{width:16px;background-size:8px 100%}
+ .pf .band .tt{font-size:13px!important}.pf .band .no{font-size:13px!important}
+ .v-slajd .band,.v-polaroid .band,.v-kino .band{padding:6px 0 8px}
+ .epi{display:flex;flex-direction:column;align-items:center;gap:26px}.epi .th{width:min(78%,calc(var(--a) * 300px + 20px))}.epi-txt{flex:none;width:100%}
+ .epi-txt{font-size:15px;padding:16px 18px}.epi-txt h3{font-size:23px}
+ .qr img{width:96px;height:96px}
+ .th.in.fx-countdown .box::after{font-size:56px}
+ .th.in.fx-stamp .box::after{font-size:14px;border-width:3px;padding:1px 6px}
+ #stage{margin-top:12px;padding:8px 8px 0;border-radius:8px}
+ #lbimg{max-width:calc(100vw - 40px);max-height:calc(100vh - 270px);max-height:calc(100dvh - 270px)}
+ #stage .band .tt{font-size:15px}#stage .band{padding:7px 2px 9px}
+ .arrow{top:auto;bottom:16px;transform:none;width:52px;height:52px}
+ .arrow:hover,.arrow:focus-visible{transform:translate(-2px,-2px)}
+ .arrow.prev{left:calc(50% - 86px)}.arrow.next{right:calc(50% - 86px)}
+ .lb-top{padding:10px}.lb-btns{flex-wrap:nowrap;gap:6px}.btn{font-size:12px;padding:6px 9px;letter-spacing:.02em}.btn .lg{display:none}.btn .sm{display:inline}.lb-ctr{font-size:18px;min-width:56px}
+ .lb-sec{margin-bottom:72px;font-size:12px;letter-spacing:.14em}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.th.rv .pf{opacity:1!important;transform:none!important}#fx{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header class="cover">
+  <div class="rainbow" aria-hidden="true"></div>
+  <div class="inner">
+   <div class="kicker"><i></i>Pokaz slajdów rodzinnych · 23 zdjęcia<i></i></div>
+   <h1>Lubin ’75</h1>
+   <p class="sub">Przepustka z widokiem na budowę</p>
+   <span class="date">Kwiecień 1975 · Lubin, ul. Legnicka 15</span>
+   <div class="story">
+    <p>Rok 1975, kwiecień. Wojak Andrzej przyjeżdża na przepustkę do Rodziny, która mieszka w Lubinie, przy ul. Legnickiej 15.</p>
+    <p>Razem z bratem Stachem, cywilem, robią rekonesans placu budowy przyszłej Szkoły Podstawowej nr 9. Teren: hałdy, gruz i drzewa do wspinaczki. W międzyczasie na chwilę pojawia się ich 8-letnia siostra Ania.</p>
+    <p>Gasimy światło, rzutnik klika… Uwaga, slajdy potrafią zaskoczyć!</p>
+   </div>
+   <div class="credits" aria-label="Obsada">
+    <div><small>W roli głównej</small><b>ANDRZEJ</b><em>wojak na przepustce</em></div>
+    <div><small>oraz</small><b>STACH</b><em>cywil, brat</em></div>
+    <div><small>gościnnie</small><b>ANIA</b><em>8 lat, tylko na chwilę</em></div>
+   </div>
+   <div class="play-all"><button class="cta" id="startShow" type="button">▶ Pokaz slajdów</button><button class="cta alt" id="startOne" type="button">Oglądaj od początku</button></div>
+  </div>
+ </header>
+ <main id="sections"></main>
+ <footer>
+  <p class="end">Koniec</p>
+  <p class="favs" id="favInfo"></p>
+  <p>Kliknij zdjęcie, aby je powiększyć · strzałki ← → · spacja = pokaz slajdów · H = ulubione · Esc = zamknij</p>
+  <div class="qr"><img src="qr_lubin1975.png" alt="Kod QR do albumu" width="120" height="120"><span>Zeskanuj telefonem, aby otworzyć ten pokaz:<br><b>gladiator2201.github.io/lubin1975</b></span></div>
+  <small>Zdjęcia pokazane dokładnie tak, jak zostały przysłane: bez filtrów i bez zmian kolorów.<br>Efekty przejść działają tylko w chwili pojawienia się zdjęcia.</small>
+ </footer>
+</div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Przeglądarka zdjęć">
+ <div class="lb-top">
+  <div class="lb-ctr" id="ctr">1 / 23</div>
+  <div class="lb-btns">
+   <button class="btn" id="fav" type="button" title="Dodaj do ulubionych (H)">♡ <span class="lg">Ulubione</span></button>
+   <button class="btn" id="play" type="button">▶ <span class="lg">Pokaz slajdów</span><span class="sm">Slajdy</span></button>
+   <button class="btn" id="fs" type="button">⛶ <span class="lg">Pełny ekran</span><span class="sm">Ekran</span></button>
+   <button class="btn close" id="close" type="button" title="Zamknij (Esc)" aria-label="Zamknij">✕</button>
+  </div>
+ </div>
+ <button class="arrow prev" id="prev" type="button" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 30 30" fill="none" stroke="#24160c" stroke-width="5" stroke-linecap="round"><path d="M19 4L8 15l11 11"/></svg></button>
+ <button class="arrow next" id="next" type="button" aria-label="Następne zdjęcie"><svg viewBox="0 0 30 30" fill="none" stroke="#24160c" stroke-width="5" stroke-linecap="round"><path d="M11 4l11 11-11 11"/></svg></button>
+ <div id="stage" class="pf"><div class="box"><img id="lbimg" alt=""><div id="fx"></div></div><div class="band"><span class="no" id="lbno"></span><span class="tt" id="cap"></span></div></div>
+ <div class="lb-sec" id="lbsec"></div>
+ <div class="toast" id="toast"></div>
+</div>
+
+<script>
+const ALBUM = [{"num": "I", "title": "Melduję się przed blokiem", "sub": "Wojak Andrzej na przepustce", "items": [{"f": "01.jpg", "w": 1216, "h": 1632, "c": "Wojak melduje się przed blokiem", "v": "slajd"}, {"f": "23.jpg", "w": 1184, "h": 1664, "c": "Spocznij! Ale tylko na chwilę", "v": "polaroid"}], "epi": false}, {"num": "II", "title": "Rekonesans: plac budowy", "sub": "Tu stanie Szkoła Podstawowa nr 9", "items": [{"f": "02.jpg", "w": 1456, "h": 1360, "c": "Przepustka jest, mundur jest, wieżowce rosną", "v": "magazyn"}, {"f": "03.jpg", "w": 1280, "h": 1552, "c": "Inspekcja terenu. Stopień trudności: gruz", "v": "kino"}, {"f": "14.jpg", "w": 1264, "h": 1568, "c": "Wojsko sprawdza, czy gruz leży zgodnie z planem", "v": "slajd"}, {"f": "09.jpg", "w": 1200, "h": 1648, "c": "Patrol dalekiego zasięgu", "v": "polaroid"}, {"f": "07.jpg", "w": 1344, "h": 1472, "c": "Cywil na posterunku", "v": "magazyn"}, {"f": "08.jpg", "w": 1392, "h": 1424, "c": "Brat Stach. Stan cywilny: elegancki", "v": "kino"}], "epi": false}, {"num": "III", "title": "Zdobywcy kopca", "sub": "Kto wyżej, ten ważniejszy", "items": [{"f": "04.jpg", "w": 1344, "h": 1472, "c": "Stach na szczycie. Ręce skrzyżowane, plan gotowy", "v": "slajd"}, {"f": "16.jpg", "w": 1344, "h": 1472, "c": "Kopiec zdobyty, flaga niepotrzebna", "v": "polaroid"}, {"f": "11.jpg", "w": 1232, "h": 1600, "c": "Zmiana warty na szczycie kopca", "v": "magazyn"}], "epi": false}, {"num": "IV", "title": "Ławka przy murze", "sub": "Ania na chwilę, wojak na odpoczynku", "items": [{"f": "05.jpg", "w": 1712, "h": 1152, "c": "Ania wpadła na chwilę. Tylko na jedno zdjęcie!", "v": "kino"}, {"f": "17.jpg", "w": 1456, "h": 1360, "c": "Czapka na ławce, odpoczynek regulaminowy", "v": "slajd"}], "epi": false}, {"num": "V", "title": "Patrol między hałdami", "sub": "Teren trudny, humor dobry", "items": [{"f": "06.jpg", "w": 1360, "h": 1440, "c": "Krok defiladowy po hałdach", "v": "polaroid"}, {"f": "20.jpg", "w": 1200, "h": 1648, "c": "Wojsko w terenie. Teren się nie poddaje", "v": "magazyn"}, {"f": "10.jpg", "w": 1136, "h": 1744, "c": "Stach w dżinsach, gotowy na każdą budowę", "v": "kino"}, {"f": "13.jpg", "w": 1184, "h": 1664, "c": "Rekonesans pieszo, bez mapy", "v": "slajd"}, {"f": "18.jpg", "w": 1200, "h": 1648, "c": "Narada w wykopie: tu będzie szkoła!", "v": "polaroid"}], "epi": false}, {"num": "VI", "title": "Punkty obserwacyjne", "sub": "Na drzewach, z widokiem na osiedle", "items": [{"f": "12.jpg", "w": 1200, "h": 1648, "c": "Punkt obserwacyjny nr 1: Stach na drzewie", "v": "magazyn"}, {"f": "15.jpg", "w": 1216, "h": 1632, "c": "Wojak na gałęzi, widok na osiedle", "v": "kino"}, {"f": "19.jpg", "w": 1200, "h": 1648, "c": "Wspinaczka w mundurze, bez rozkazu", "v": "slajd"}, {"f": "21.jpg", "w": 1200, "h": 1632, "c": "Najwyżej postawiony żołnierz w Lubinie", "v": "polaroid"}], "epi": false}, {"num": "Epilog", "title": "Dzwon w Świnoujściu", "sub": "Do czego służył Niemcom?", "items": [{"f": "22.jpg", "w": 1120, "h": 1776, "c": "Dzwon, który nigdy nie dzwonił", "v": "magazyn"}], "epi": true}];
+const src=(kind,f)=>kind+"/"+f;
+const pad=n=>String(n).padStart(2,"0");
+const RM=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+// szum telewizyjny (jeden raz, mały obrazek)
+(function(){try{const c=document.createElement("canvas");c.width=c.height=160;const x=c.getContext("2d"),d=x.createImageData(160,160);for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255|0;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=255;}x.putImageData(d,0,0);document.documentElement.style.setProperty("--noise",`url(${c.toDataURL()})`);}catch(e){}})();
+const FX_LB=["projector","countdown","iris","polaroid","tv","flip","curtain","zoom","tiles","blinds","stamp"];
+const FX_GRID=["projector","iris","tv","curtain","polaroid","flip","zoom","stamp","blinds","countdown","tiles"];
+// ulubione (tylko na tym urządzeniu)
+const FKEY="lubin1975-ulubione";
+let favs=new Set(); try{favs=new Set(JSON.parse(localStorage.getItem(FKEY)||"[]"));}catch(e){}
+const saveFavs=()=>{try{localStorage.setItem(FKEY,JSON.stringify([...favs]));}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const EPI=`<div class="epi-txt"><h3>Do czego Niemcom służył „Dzwon”?</h3>
+<p>Ta betonowa wieża w kształcie dzwonu to dawna wieża dowodzenia, czyli kierowania ogniem, niemieckiej baterii artylerii nadbrzeżnej <b>Goeben</b> na wyspie Wolin w Świnoujściu, zbudowana w latach 1938–1939.</p>
+<p>Na szczycie, pod pancerną kopułą, przewidziano optyczny dalmierz o bazie 12 m do namierzania okrętów na Zatoce Pomorskiej, a niżej mieściły się centrala dowodzenia, maszynownia i kwatery załogi. Kształt upodabniał ją do latarni morskiej i sprzyjał odbijaniu się pocisków.</p>
+<p>Dziś to dostrzegalnia przeciwpożarowa Nadleśnictwa Międzyzdroje i punkt na Szlaku Fortyfikacyjnym Twierdzy Świnoujście.</p>
+<p class="src">Źródła: <a href="https://pl.wikipedia.org/wiki/Bateria_Goeben" target="_blank" rel="noopener">Wikipedia, „Bateria Goeben”</a> · <a href="https://miedzyzdroje.szczecin.lasy.gov.pl/witamy/-/journal_content/56/34493/38103" target="_blank" rel="noopener">Nadleśnictwo Międzyzdroje</a> · <a href="https://polska-org.pl/9100906,Swinoujscie,Wieza_dowodzenia_baterii_Goeben_Dzwon.html" target="_blank" rel="noopener">polska-org.pl</a></p></div>`;
+
+const flat=[]; const main=document.getElementById("sections");
+ALBUM.forEach(sec=>{
+ const el=document.createElement("section");
+ el.innerHTML=`<div class="sec-h"><span class="num">${sec.epi?"Epilog":"Karuzela "+sec.num}</span><h2>${sec.title}</h2><small>${sec.sub}</small><span class="stripes"></span></div><div class="grid${sec.epi?" epi":""}"></div>`;
+ const g=el.querySelector(".grid");
+ sec.items.forEach((it,k)=>{
+  const i=flat.length; flat.push({...it,sec});
+  const a=document.createElement("a"); a.className="th"+(it.w>it.h?" wide":""); a.href="#"+(i+1); a.style.setProperty("--a",(it.w/it.h).toFixed(4)); a.style.setProperty("--d",((k%3)*0.12).toFixed(2)+"s");
+  a.dataset.fx=FX_GRID[i%FX_GRID.length];
+  a.innerHTML=`<span class="fav-dot" aria-hidden="true">♥</span><div class="pf v-${it.v}"><div class="box"><img loading="lazy" decoding="async" src="${src('thumbs',it.f)}" width="${it.w}" height="${it.h}" alt="${esc(it.c)}"></div><div class="band"><span class="no">${pad(i+1)}</span><span class="tt">${esc(it.c)}</span></div></div>`;
+  a.addEventListener("click",e=>{e.preventDefault();openLB(i);});
+  g.appendChild(a);
+ });
+ if(sec.epi) g.insertAdjacentHTML("beforeend",EPI);
+ const ps=[...g.querySelectorAll(".th:not(.wide)")]; if(!sec.epi&&ps.length%2) ps[ps.length-1].classList.add("solo");
+ main.appendChild(el);
+});
+const N=flat.length, thumbs=[...document.querySelectorAll(".th")];
+thumbs.forEach((a,i)=>a.setAttribute("aria-label",`Zdjęcie ${i+1} z ${N}: ${flat[i].c}`));
+function paintFavs(){ thumbs.forEach((a,i)=>a.classList.toggle("is-fav",favs.has(flat[i].f)));
+ const n=favs.size; document.getElementById("favInfo").textContent = n? `♥ Ulubione na tym urządzeniu: ${n}` : ""; }
+paintFavs();
+
+// niespodzianki przy przewijaniu
+if(!RM && "IntersectionObserver" in window){
+ const io=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; const a=e.target; io.unobserve(a);
+  a.classList.add("in","fx-"+a.dataset.fx); setTimeout(()=>a.classList.remove("fx-"+a.dataset.fx),1700); }),{rootMargin:"0px 0px -12% 0px",threshold:.25});
+ thumbs.forEach(a=>{a.classList.add("rv"); io.observe(a);});
+}
+
+// lightbox
+const lb=document.getElementById("lb"),img=document.getElementById("lbimg"),fx=document.getElementById("fx"),ctr=document.getElementById("ctr"),cap=document.getElementById("cap"),lbno=document.getElementById("lbno"),lbsec=document.getElementById("lbsec"),stage=document.getElementById("stage"),toastEl=document.getElementById("toast"),favBtn=document.getElementById("fav");
+let cur=0,timer=null,lastFocus=null,token=0,fxT=null,bag=[],lastFx="";
+function nextFx(){ if(!bag.length){ bag=FX_LB.slice(); for(let i=bag.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[bag[i],bag[j]]=[bag[j],bag[i]];} if(bag[bag.length-1]===lastFx) bag.unshift(bag.pop()); } return lastFx=bag.pop(); }
+function clearFx(){ FX_LB.forEach(n=>stage.classList.remove("fx-"+n)); fx.innerHTML=""; fx.removeAttribute("style"); }
+function runFx(name,url){
+ clearFx(); if(RM) return; void stage.offsetWidth;
+ if(name==="countdown") fx.innerHTML="<span>3</span><span>2</span><span>1</span>";
+ if(name==="tiles"){ const C=5,R=4; fx.style.setProperty("--tc",C); fx.style.setProperty("--tr",R); let h="";
+  for(let r=0;r<R;r++)for(let c=0;c<C;c++) h+=`<i style="background-image:url('${url}');background-size:${C*100}% ${R*100}%;background-position:${c/(C-1)*100}% ${r/(R-1)*100}%;animation-delay:${(Math.random()*.5).toFixed(2)}s"></i>`;
+  fx.innerHTML=h; }
+ stage.classList.add("fx-"+name);
+ clearTimeout(fxT); fxT=setTimeout(clearFx,1400);
+}
+function favPaint(){ const on=favs.has(flat[cur].f); favBtn.classList.toggle("on",on); favBtn.innerHTML=(on?"♥":"♡")+' <span class="lg">Ulubione</span>'; }
+function show(i){
+ cur=(i+N)%N; const it=flat[cur], my=++token;
+ ctr.textContent=`${pad(cur+1)} / ${N}`;
+ const pre=new Image(); pre.src=src("img",it.f);
+ const swap=()=>{ if(my!==token) return; img.src=pre.src; img.alt=it.c; lbno.textContent=pad(cur+1); cap.textContent=it.c; lbsec.textContent=it.sec.epi?`Epilog · ${it.sec.title}`:`Karuzela ${it.sec.num} · ${it.sec.title}`; img.classList.add("show"); runFx(nextFx(),pre.src); };
+ (pre.decode?pre.decode().catch(()=>{}):Promise.resolve()).then(swap);
+ [1,-1].forEach(d=>{const n=new Image(); n.src=src("img",flat[(cur+d+N)%N].f);});
+ favPaint();
+ if(history.replaceState) history.replaceState(null,"","#"+(cur+1));
+}
+function openLB(i){lastFocus=document.activeElement; img.removeAttribute("src"); img.classList.remove("show"); lb.classList.add("open"); document.body.style.overflow="hidden"; show(i); document.getElementById("close").focus({preventScroll:true});}
+function closeLB(){stopPlay(); if(document.fullscreenElement||document.webkitFullscreenElement){(document.exitFullscreen||document.webkitExitFullscreen).call(document);} lb.classList.remove("open"); clearFx(); document.body.style.overflow=""; if(history.replaceState) history.replaceState(null,"",location.pathname+location.search); if(lastFocus) lastFocus.focus({preventScroll:true});}
+const next=()=>show(cur+1), prev=()=>show(cur-1);
+document.getElementById("next").onclick=()=>{stopPlay();next();};
+document.getElementById("prev").onclick=()=>{stopPlay();prev();};
+document.getElementById("close").onclick=closeLB;
+lb.addEventListener("click",e=>{ if(e.target===lb) closeLB(); });
+function toggleFav(){ const f=flat[cur].f; if(favs.has(f)){favs.delete(f); toast("Usunięto z ulubionych");} else {favs.add(f); toast("♥ Dodano do ulubionych");} saveFavs(); favPaint(); paintFavs(); }
+favBtn.onclick=toggleFav;
+img.addEventListener("dblclick",toggleFav);
+document.addEventListener("keydown",e=>{ if(!lb.classList.contains("open")) return;
+ if(e.key==="ArrowRight"){stopPlay();next();} else if(e.key==="ArrowLeft"){stopPlay();prev();}
+ else if(e.key==="Escape"){ if(!(document.fullscreenElement||document.webkitFullscreenElement)) closeLB(); }
+ else if(e.key===" "){e.preventDefault(); togglePlay();}
+ else if(e.key==="h"||e.key==="H"){toggleFav();} });
+let tx=null,ty=null;
+lb.addEventListener("touchstart",e=>{ if(e.touches.length===1){tx=e.touches[0].clientX;ty=e.touches[0].clientY;} },{passive:true});
+lb.addEventListener("touchend",e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty; tx=null;
+ if(Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.3){ stopPlay(); dx<0?next():prev(); } });
+const playBtn=document.getElementById("play");
+function stopPlay(){ if(timer){clearInterval(timer);timer=null;playBtn.classList.remove("on");playBtn.innerHTML='▶ <span class="lg">Pokaz slajdów</span><span class="sm">Slajdy</span>';} }
+function togglePlay(){ if(timer){stopPlay();return;} timer=setInterval(next,4200); playBtn.classList.add("on"); playBtn.innerHTML='❚❚ <span class="lg">Zatrzymaj</span><span class="sm">Stop</span>'; toast("Pokaz slajdów: nowe zdjęcie co 4 sekundy"); }
+playBtn.onclick=togglePlay;
+document.getElementById("startShow").onclick=()=>{openLB(0); togglePlay();};
+document.getElementById("startOne").onclick=()=>openLB(0);
+function toast(t){ toastEl.textContent=t; toastEl.classList.add("on"); clearTimeout(toast._t); toast._t=setTimeout(()=>toastEl.classList.remove("on"),2600); }
+const fsBtn=document.getElementById("fs");
+function fsUpdate(){ fsBtn.innerHTML=(document.fullscreenElement||document.webkitFullscreenElement)?'⛶ <span class="lg">Zamknij pełny ekran</span><span class="sm">Ekran</span>':'⛶ <span class="lg">Pełny ekran</span><span class="sm">Ekran</span>'; }
+document.addEventListener("fullscreenchange",fsUpdate); document.addEventListener("webkitfullscreenchange",fsUpdate);
+fsBtn.onclick=()=>{
+ if(document.fullscreenElement||document.webkitFullscreenElement){ (document.exitFullscreen||document.webkitExitFullscreen).call(document); return; }
+ const req=lb.requestFullscreen||lb.webkitRequestFullscreen, enabled=document.fullscreenEnabled||document.webkitFullscreenEnabled;
+ if(!req||!enabled){ toast("Pełny ekran niedostępny tutaj, naciśnij F11"); return; }
+ try{ const p=req.call(lb); if(p&&p.catch) p.catch(()=>toast("Pełny ekran niedostępny tutaj, naciśnij F11")); }catch(e){ toast("Pełny ekran niedostępny tutaj, naciśnij F11"); }
+};
+const h=parseInt(location.hash.slice(1)); if(h>=1&&h<=N) openLB(h-1);
+</script>
+</body>
+</html>
